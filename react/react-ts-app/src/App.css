@@ -1,0 +1,81 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background: #f4f6f8;
+}
+
+/* OUTER WRAPPER (CENTERS EVERYTHING) */
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* MAIN DASHBOARD CONTAINER */
+.app {
+  width: 960px;            /* 👈 FIXED DESKTOP WIDTH */
+  padding: 32px 24px;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* FILTER BAR */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.filters input,
+.filters select {
+  padding: 10px;
+  font-size: 14px;
+  min-width: 160px;
+}
+
+/* CONTENT AREA */
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+/* DEVICE LIST */
+.device-list {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* DEVICE CARD */
+.device-card {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.device-card.active {
+  border-color: #007bff;
+}
+
+/* DETAILS PANEL */
+.details {
+  width: 360px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
