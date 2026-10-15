@@ -11,6 +11,6 @@ export function fetchDevices(): Promise<Device[]> {
       } else {
         resolve(mockDevices)
       }
-    },1000)
+    },1500)
   })
 }
